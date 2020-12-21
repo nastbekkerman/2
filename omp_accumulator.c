@@ -80,8 +80,7 @@ double omp_accumulate_atomic(size_t count)
 		#pragma omp atomic
                 sum += 1.0/(i+1.0);
             else
-		   #pragma omp atomic 
-		    
+		 #pragma omp atomic 
                 sum += -1.0/(i+1.0);
 	return sum;
 }
